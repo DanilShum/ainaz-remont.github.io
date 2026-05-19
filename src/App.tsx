@@ -28,7 +28,7 @@ function ScrollToHash() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ainaz-remont.github.io">
       <div className="app">
         <ScrollToHash />
         <Routes>
