@@ -1,0 +1,164 @@
+const advantages = [
+  {
+    id: 1,
+    title: "Работаем без посредников",
+    description: "Своя бригада мастеров. Никаких сторонних подрядчиков — один договор, одна ответственность.",
+    stat: "100%",
+    statLabel: "контроль качества"
+  },
+  {
+    id: 2,
+    title: "Фиксированная смета",
+    description: "Цена согласовывается до начала работ и не меняется в процессе ремонта.",
+    stat: "0%",
+    statLabel: "непредвиденных расходов"
+  },
+  {
+    id: 3,
+    title: "Соблюдаем сроки",
+    description: "Работаем по графику. Задержка — компенсация. Это прописано в договоре.",
+    stat: "15+",
+    statLabel: "лет опыта"
+  },
+  {
+    id: 4,
+    title: "Гарантия на работы",
+    description: "Даем официальную гарантию на все выполненные работы до 3 лет.",
+    stat: "3 года",
+    statLabel: "гарантия"
+  }
+];
+
+const services = [
+  {
+    id: 1,
+    title: "Ремонт под ключ",
+    description: "Полный комплекс работ от черновой до чистовой отделки. Вы получаете готовую к проживанию квартиру.",
+    icon: "home"
+  },
+  {
+    id: 2,
+    title: "Дизайн-проект",
+    description: "Разработка 3D-визуализации, чертежей и рабочей документации для реализации вашего интерьера.",
+    icon: "pen-tool"
+  },
+  {
+    id: 3,
+    title: "Частичный ремонт",
+    description: "Отдельные виды работ: отделка санузла, кухни, комнаты или ремонт по комнатам.",
+    icon: "hammer"
+  },
+  {
+    id: 4,
+    title: "Замер и консультация",
+    description: "Бесплатный выезд замерщика на объект. Консультация по материалам и срокам.",
+    icon: "ruler"
+  }
+];
+
+const team = [
+  {
+    id: 1,
+    name: "Айназ",
+    role: "Руководитель",
+    bio: "Ответственный за качество каждого проекта. Контролирует все этапы ремонта.",
+    image: "assets/people.png"
+  },
+  {
+    id: 2,
+    name: "Радик",
+    role: "Прораб",
+    bio: "Координирует работу бригады. Опыт в строительстве более 10 лет.",
+    image: "assets/people.png"
+  },
+  {
+    id: 3,
+    name: "Алексей",
+    role: "Дизайнер-проектировщик",
+    bio: "Разрабатывает дизайн-проекты с учетом пожеланий клиента и технических возможностей.",
+    image: "assets/people.png"
+  },
+  {
+    id: 4,
+    name: "Ильнур",
+    role: "Мастер отделочных работ",
+    bio: "Специалист по финишной отделке: покраска, обои, декоративные покрытия.",
+    image: "assets/people.png"
+  }
+];
+
+const portfolio = [
+  {
+    id: 1,
+    title: "ЖК Легенда",
+    area: "78 м²",
+    year: "2025",
+    description: "Современный ремонт в светлых тонах",
+    location: "ЖК Легенда, Казань",
+    duration: "2,5 месяца",
+    price: "780 000 ₽",
+    image: "assets/room1.jpeg"
+  },
+  {
+    id: 2,
+    title: "ЖК Ричмонд",
+    area: "90 м²",
+    year: "2025",
+    description: "Стильный интерьер в стиле минимализм",
+    location: "ЖК Ричмонд, Казань",
+    duration: "3 месяца",
+    price: "900 000 ₽",
+    image: "assets/room2.jpeg"
+  },
+  {
+    id: 3,
+    title: "ЖК Ричмонд",
+    area: "52 м²",
+    year: "2023",
+    description: "Уютная квартира для молодой семьи",
+    location: "ЖК Ричмонд, Казань",
+    duration: "2 месяца",
+    price: "520 000 ₽",
+    image: "assets/image-3252730.png"
+  },
+  {
+    id: 4,
+    title: "ЖК Savin Premier",
+    area: "60 м²",
+    year: "2024",
+    description: "Светлый интерьер с панорамными окнами",
+    location: "ЖК Savin Premier, Казань",
+    duration: "2 месяца",
+    price: "600 000 ₽",
+    image: "assets/image-3252729.png"
+  },
+  {
+    id: 5,
+    title: "Частный дом",
+    area: "210 м²",
+    year: "2025",
+    description: "Просторный дом с авторским дизайном",
+    location: "Казань, частный сектор",
+    duration: "5 месяцев",
+    price: "2 100 000 ₽",
+    image: "assets/image-3252727.png"
+  },
+  {
+    id: 6,
+    title: "ул. Чатаева",
+    area: "78 м²",
+    year: "2025",
+    description: "Классический ремонт с современными акцентами",
+    location: "ул. Чатаева, Казань",
+    duration: "2,5 месяца",
+    price: "780 000 ₽",
+    image: "assets/image-3252732.png"
+  }
+];
+
+const icons = {
+  home: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>',
+  'pen-tool': '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>',
+  hammer: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12l-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"></path><path d="M17.64 15L22 10.64"></path><path d="M20.91 11.7l-1.25-1.25c-.6-.6-.93-1.4-.93-2.25V3h-2v4.97L14.61 9.05a2.001 2.001 0 0 1 2.75 2.75l3.55 3.55"></path></svg>',
+  ruler: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A1 1 0 0 0 22 15V6a1 1 0 0 0-.29-.71l-4-4a1 1 0 0 0-1.42 0l-9 9-5 1a1 1 0 0 0 0 1.83l5 1"></path><path d="M21 15v5a1 1 0 0 0 1 1h1"></path><path d="M14 4.1L12 6l-1.9-1.9"></path></svg>'
+};

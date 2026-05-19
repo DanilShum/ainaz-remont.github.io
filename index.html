@@ -1,79 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Айназ Ремонт — Ремонт квартир под ключ в Казани</title>
-    <meta name="title" content="Айназ Ремонт — Ремонт квартир под ключ в Казани" />
-    <meta name="description" content="Ремонт квартир под ключ в Казани. Качественный ремонт с фиксированной сметой, соблюдением сроков и гарантией до 3 лет. Работаем без посредников. Звоните: +7 939 386 83 81" />
-    <meta name="keywords" content="ремонт квартир, ремонт под ключ, Казань, ремонт квартир Казань, ремонт офисов, дизайн интерьера, отделочные работы" />
-    <meta name="author" content="Айназ Ремонт" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://danilshum.github.io/ainaz-remont.github.io/" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://danilshum.github.io/ainaz-remont.github.io/" />
-    <meta property="og:title" content="Айназ Ремонт — Ремонт квартир под ключ в Казани" />
-    <meta property="og:description" content="Качественный ремонт квартир в Казани. Фиксированная смета, соблюдение сроков, гарантия до 3 лет. Звоните: +7 939 386 83 81" />
-    <meta property="og:image" content="/og-image.jpg" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:site_name" content="Айназ Ремонт" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://danilshum.github.io/ainaz-remont.github.io/" />
-    <meta property="twitter:title" content="Айназ Ремонт — Ремонт квартир под ключ в Казани" />
-    <meta property="twitter:description" content="Качественный ремонт квартир в Казани. Фиксированная смета, соблюдение сроков, гарантия до 3 лет." />
-    <meta property="twitter:image" content="/og-image.jpg" />
-    
-    <!-- Geo -->
-    <meta name="geo.region" content="RU-TA" />
-    <meta name="geo.placename" content="Казань" />
-    <meta name="geo.position" content="55.830430;49.066080" />
-    <meta name="ICBM" content="55.830430, 49.066080" />
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#ffffff" />
-    
-    <!-- JSON-LD Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      "name": "Айназ Ремонт",
-      "description": "Ремонт квартир под ключ в Казани",
-      "url": "https://danilshum.github.io/ainaz-remont.github.io",
-      "telephone": "+79393868381",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Проспект Победы",
-        "addressLocality": "Казань",
-        "addressRegion": "Татарстан",
-        "postalCode": "",
-        "addressCountry": "RU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "55.803115",
-        "longitude": "49.210385"
-      },
-      "openingHours": "Mo-Su 09:00-20:00",
-      "priceRange": "₽₽₽",
-      "image": "/og-image.jpg",
-      "areaServed": {
-        "@type": "City",
-        "name": "Казань"
-      },
-      "serviceType": ["Ремонт квартир", "Ремонт офисов", "Дизайн интерьера", "Отделочные работы"]
-    }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Айназ Ремонт — Ремонт квартир под ключ в Казани</title>
+  <meta name="description" content="Ремонт квартир под ключ в Казани. Качественный ремонт с фиксированной сметой, соблюдением сроков и гарантией до 3 лет.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-text">Айназ Ремонт</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav-link">Главная</a>
+        <a href="#team" class="nav-link">Команда</a>
+        <a href="#portfolio" class="nav-link">Портфолио</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <a href="tel:+79393868381" class="phone-link">
+        <span>+7 939 386 83 81</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag">Ремонт квартир в Казани</div>
+        <h1 class="hero-title">
+          Ремонт квартир<br>
+          <span>под ключ</span>
+        </h1>
+        <p class="hero-subtitle">
+          Качественный ремонт с фиксированной сметой и соблюдением сроков.
+          Работаем в Казани. Одна команда — один подрядчик.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">100+</span>
+            <span class="hero-stat-label">проектов</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">15</span>
+            <span class="hero-stat-label">лет опыта</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">3 года</span>
+            <span class="hero-stat-label">гарантия</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button class="hero-btn primary" onclick="scrollToContacts()">Получить консультацию</button>
+          <a href="tel:+79393868381" class="hero-btn secondary">+7 939 386 83 81</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/room2.jpeg" alt="Ремонт квартиры">
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages-container">
+        <div class="advantages-header">
+          <h2 class="section-title">Почему выбирают нас</h2>
+          <p class="section-subtitle">Работаем честно и прозрачно. Без скрытых платежей и срыва сроков</p>
+        </div>
+        <div class="advantages-grid" id="advantagesGrid"></div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services-container">
+        <div class="services-header">
+          <h2 class="section-title">Наши услуги</h2>
+          <p class="section-subtitle">Комплексный подход к ремонту — от проекта до реализации</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="team-container">
+        <div class="team-header">
+          <h2 class="section-title">Наша команда</h2>
+          <p class="section-subtitle">Профессионалы с большим опытом работы в сфере ремонта</p>
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-container">
+        <div class="portfolio-header">
+          <h2 class="section-title">Портфолио</h2>
+          <p class="section-subtitle">Реализованные проекты в Казани</p>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="contacts-container">
+        <div class="contacts-header">
+          <h2 class="section-title">Контакты</h2>
+          <p class="section-subtitle">Свяжитесь с нами для бесплатной консультации</p>
+        </div>
+        <div class="contacts-grid">
+          <div class="contacts-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <span class="contact-label">Телефон</span>
+                <a href="tel:+79393868381" class="contact-value">+7 939 386 83 81</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <span class="contact-label">Адрес</span>
+                <span class="contact-value">г. Казань, Проспект Победы</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-content">
+                <span class="contact-label">Режим работы</span>
+                <span class="contact-value">Ежедневно с 9:00 до 20:00</span>
+              </div>
+            </div>
+            <a href="https://web.max.ru/238716647" class="contact-max" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span>Написать в Max</span>
+            </a>
+          </div>
+          <div class="contacts-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=49.210385%2C55.803115&z=17&pt=49.210385%2C55.803115" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="footer-logo">Айназ Ремонт</span>
+          <p class="footer-tagline">Ремонт квартир под ключ в Казани</p>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:+79393868381" class="footer-phone">+7 939 386 83 81</a>
+          <span class="footer-address">г. Казань, Проспект Победы</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright" id="copyright"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
