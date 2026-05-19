@@ -29,8 +29,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install --force
-          ls -la
+          rm -rf node_modules package-lock.json
+          npm cache clean --force
+          npm install
+          echo "=== node_modules ==="
+          ls -la node_modules/ | head -20
+          echo "=== .bin ==="
+          ls -la node_modules/.bin/ 2>/dev/null || echo "NO .bin"
       
       - name: Build
         run: npx vite build
