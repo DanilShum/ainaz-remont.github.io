@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Advantages from './components/Advantages';
@@ -10,10 +11,26 @@ import Footer from './components/Footer';
 import ProjectDetail from './components/ProjectDetail';
 import './App.css';
 
+function ScrollToHash() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter basename="/ainaz-remont.github.io">
       <div className="app">
+        <ScrollToHash />
         <Routes>
           <Route path="/project/:id" element={
             <>

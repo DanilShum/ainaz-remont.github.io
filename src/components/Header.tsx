@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { contacts, navItems } from '../data/contacts';
 import './Header.css';
@@ -7,15 +7,19 @@ import './Header.css';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isProjectPage = location.pathname.startsWith('/project/');
 
   const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const hash = href.replace('#', '');
+    
     if (isProjectPage) {
-      e.preventDefault();
-      window.location.href = href;
+      navigate(`/#${hash}`);
       return;
     }
-    e.preventDefault();
+    
+    navigate(`#${hash}`, { replace: true });
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

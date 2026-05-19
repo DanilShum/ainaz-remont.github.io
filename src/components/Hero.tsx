@@ -1,12 +1,12 @@
-import { ArrowRight, Phone } from 'lucide-react';
-import { contacts } from '../data/contacts';
-import './Hero.css';
+import { ArrowRight, Phone } from "lucide-react";
+import { contacts } from "../data/contacts";
+import "./Hero.css";
 
 function Hero() {
   const handleScrollToContacts = () => {
-    const element = document.querySelector('#contacts');
+    const element = document.querySelector("#contacts");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -15,20 +15,21 @@ function Hero() {
       <div className="hero-background">
         <div className="hero-gradient"></div>
       </div>
-      
+
       <div className="hero-content">
         <div className="hero-tag">Ремонт квартир в Казани</div>
-        
+
         <h1 className="hero-title">
-          Ремонт квартир<br />
+          Ремонт квартир
+          <br />
           <span>под ключ</span>
         </h1>
-        
+
         <p className="hero-subtitle">
           Качественный ремонт с фиксированной сметой и соблюдением сроков.
           Работаем в Казани. Одна команда — один подрядчик.
         </p>
-        
+
         <div className="hero-stats">
           <div className="hero-stat">
             <span className="hero-stat-number">100+</span>
@@ -43,7 +44,7 @@ function Hero() {
             <span className="hero-stat-label">гарантия</span>
           </div>
         </div>
-        
+
         <div className="hero-actions">
           <button className="hero-btn primary" onClick={handleScrollToContacts}>
             Получить консультацию
@@ -55,12 +56,9 @@ function Hero() {
           </a>
         </div>
       </div>
-      
+
       <div className="hero-image">
-        <img 
-          src="https://img.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600" 
-          alt="Ремонт квартиры"
-        />
+        <img src="/assets/project/room2.jpeg" alt="Ремонт квартиры" />
       </div>
     </section>
   );
