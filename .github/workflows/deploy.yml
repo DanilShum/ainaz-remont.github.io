@@ -19,14 +19,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      
+
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install --force
+          ls -la
       
       - name: Build
         run: npx vite build
