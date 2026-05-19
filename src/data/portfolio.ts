@@ -20,11 +20,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Современный ремонт в светлых тонах",
     fullDescription: "Полный ремонт квартиры в жилом комплексе «Легенда». Выполнен современный ремонт в светлых тонах с использованием качественных материалов. Особое внимание уделено зонированию пространства и организации освещения.",
-    image: "/assets/project/room1.jpeg",
+    image: "./assets/project/room1.jpeg",
     images: [
-      "/assets/project/room1.jpeg",
-      "/assets/project/room2.jpeg",
-      "/assets/project/image-3252732.png"
+      "./assets/project/room1.jpeg",
+      "./assets/project/room2.jpeg",
+      "./assets/project/image-3252732.png"
     ],
     location: "ЖК Легенда, Казань",
     duration: "2,5 месяца",
@@ -37,11 +37,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Стильный интерьер в стиле минимализм",
     fullDescription: "Ремонт квартиры в стиле минимализм. Пространство организовано максимально функционально. Использованы качественные отделочные материалы, мебель на заказ.",
-    image: "/assets/project/room2.jpeg",
+    image: "./assets/project/room2.jpeg",
     images: [
-      "/assets/project/room2.jpeg",
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png"
+      "./assets/project/room2.jpeg",
+      "./assets/project/image-3252730.png",
+      "./assets/project/image-3252729.png"
     ],
     location: "ЖК Ричмонд, Казань",
     duration: "3 месяца",
@@ -54,11 +54,11 @@ export const portfolio: Project[] = [
     year: "2023",
     description: "Уютная квартира для молодой семьи",
     fullDescription: "Уютный ремонт для молодой семьи. Квартира разделена на функциональные зоны. Использованы экологичные материалы, выполнена система умного дома.",
-    image: "/assets/project/image-3252730.png",
+    image: "./assets/project/image-3252730.png",
     images: [
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png",
-      "/assets/project/image-3252727.png"
+      "./assets/project/image-3252730.png",
+      "./assets/project/image-3252729.png",
+      "./assets/project/image-3252727.png"
     ],
     location: "ЖК Ричмонд, Казань",
     duration: "2 месяца",
@@ -71,11 +71,11 @@ export const portfolio: Project[] = [
     year: "2024",
     description: "Светлый интерьер с панорамными окнами",
     fullDescription: "Ремонт квартиры с панорамным остеклением. Светлый интерьер с акцентными элементами. Выполнена перепланировка для максимального использования естественного освещения.",
-    image: "/assets/project/image-3252729.png",
+    image: "./assets/project/image-3252729.png",
     images: [
-      "/assets/project/image-3252729.png",
-      "/assets/project/image-3252727.png",
-      "/assets/project/image-3252732.png"
+      "./assets/project/image-3252729.png",
+      "./assets/project/image-3252727.png",
+      "./assets/project/image-3252732.png"
     ],
     location: "ЖК Savin Premier, Казань",
     duration: "2 месяца",
@@ -88,11 +88,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Просторный дом с авторским дизайном",
     fullDescription: "Авторский ремонт частного дома. Разработан индивидуальный дизайн-проект. Выполнены все виды работ: от черновой отделки до декора. Дом оборудован системой умного дома.",
-    image: "/assets/project/image-3252727.png",
+    image: "./assets/project/image-3252727.png",
     images: [
-      "/assets/project/image-3252727.png",
-      "/assets/project/room1.jpeg",
-      "/assets/project/room2.jpeg"
+      "./assets/project/image-3252727.png",
+      "./assets/project/room1.jpeg",
+      "./assets/project/room2.jpeg"
     ],
     location: "Казань, частный сектор",
     duration: "5 месяцев",
@@ -105,11 +105,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Классический ремонт с современными акцентами",
     fullDescription: "Ремонт квартиры в классическом стиле с современными элементами. Использованы качественные материалы: паркетная доска, натуральный камень, лепнина.",
-    image: "/assets/project/image-3252732.png",
+    image: "./assets/project/image-3252732.png",
     images: [
-      "/assets/project/image-3252732.png",
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png"
+      "./assets/project/image-3252732.png",
+      "./assets/project/image-3252730.png",
+      "./assets/project/image-3252729.png"
     ],
     location: "ул. Чатаева, Казань",
     duration: "2,5 месяца",
