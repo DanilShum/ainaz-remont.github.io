@@ -1,3 +1,5 @@
+import { images } from './team';
+
 export interface Project {
   id: number;
   title: string;
@@ -20,11 +22,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Современный ремонт в светлых тонах",
     fullDescription: "Полный ремонт квартиры в жилом комплексе «Легенда». Выполнен современный ремонт в светлых тонах с использованием качественных материалов. Особое внимание уделено зонированию пространства и организации освещения.",
-    image: "/assets/project/room1.jpeg",
+    image: images.room1,
     images: [
-      "/assets/project/room1.jpeg",
-      "/assets/project/room2.jpeg",
-      "/assets/project/image-3252732.png"
+      images.room1,
+      images.room2,
+      images.img4
     ],
     location: "ЖК Легенда, Казань",
     duration: "2,5 месяца",
@@ -37,11 +39,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Стильный интерьер в стиле минимализм",
     fullDescription: "Ремонт квартиры в стиле минимализм. Пространство организовано максимально функционально. Использованы качественные отделочные материалы, мебель на заказ.",
-    image: "/assets/project/room2.jpeg",
+    image: images.room2,
     images: [
-      "/assets/project/room2.jpeg",
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png"
+      images.room2,
+      images.img3,
+      images.img2
     ],
     location: "ЖК Ричмонд, Казань",
     duration: "3 месяца",
@@ -54,11 +56,11 @@ export const portfolio: Project[] = [
     year: "2023",
     description: "Уютная квартира для молодой семьи",
     fullDescription: "Уютный ремонт для молодой семьи. Квартира разделена на функциональные зоны. Использованы экологичные материалы, выполнена система умного дома.",
-    image: "/assets/project/image-3252730.png",
+    image: images.img3,
     images: [
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png",
-      "/assets/project/image-3252727.png"
+      images.img3,
+      images.img2,
+      images.img1
     ],
     location: "ЖК Ричмонд, Казань",
     duration: "2 месяца",
@@ -71,11 +73,11 @@ export const portfolio: Project[] = [
     year: "2024",
     description: "Светлый интерьер с панорамными окнами",
     fullDescription: "Ремонт квартиры с панорамным остеклением. Светлый интерьер с акцентными элементами. Выполнена перепланировка для максимального использования естественного освещения.",
-    image: "/assets/project/image-3252729.png",
+    image: images.img2,
     images: [
-      "/assets/project/image-3252729.png",
-      "/assets/project/image-3252727.png",
-      "/assets/project/image-3252732.png"
+      images.img2,
+      images.img1,
+      images.img4
     ],
     location: "ЖК Savin Premier, Казань",
     duration: "2 месяца",
@@ -88,11 +90,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Просторный дом с авторским дизайном",
     fullDescription: "Авторский ремонт частного дома. Разработан индивидуальный дизайн-проект. Выполнены все виды работ: от черновой отделки до декора. Дом оборудован системой умного дома.",
-    image: "/assets/project/image-3252727.png",
+    image: images.img1,
     images: [
-      "/assets/project/image-3252727.png",
-      "/assets/project/room1.jpeg",
-      "/assets/project/room2.jpeg"
+      images.img1,
+      images.room1,
+      images.room2
     ],
     location: "Казань, частный сектор",
     duration: "5 месяцев",
@@ -105,11 +107,11 @@ export const portfolio: Project[] = [
     year: "2025",
     description: "Классический ремонт с современными акцентами",
     fullDescription: "Ремонт квартиры в классическом стиле с современными элементами. Использованы качественные материалы: паркетная доска, натуральный камень, лепнина.",
-    image: "/assets/project/image-3252732.png",
+    image: images.img4,
     images: [
-      "/assets/project/image-3252732.png",
-      "/assets/project/image-3252730.png",
-      "/assets/project/image-3252729.png"
+      images.img4,
+      images.img3,
+      images.img2
     ],
     location: "ул. Чатаева, Казань",
     duration: "2,5 месяца",

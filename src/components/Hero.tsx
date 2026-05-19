@@ -1,5 +1,6 @@
 import { ArrowRight, Phone } from "lucide-react";
 import { contacts } from "../data/contacts";
+import { images } from "../data/team";
 import "./Hero.css";
 
 function Hero() {
@@ -58,7 +59,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src="/assets/project/room2.jpeg" alt="Ремонт квартиры" />
+        <img src={images.room2} alt="Ремонт квартиры" />
       </div>
     </section>
   );
