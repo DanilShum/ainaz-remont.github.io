@@ -53,7 +53,7 @@ function renderTeam() {
 function renderPortfolio() {
   const grid = document.getElementById('portfolioGrid');
   grid.innerHTML = portfolio.map(project => `
-    <div class="portfolio-card">
+    <a href="project.html?id=${project.id}" class="portfolio-card">
       <div class="portfolio-image">
         <img src="${project.image}" alt="${project.title}">
         <div class="portfolio-overlay">
@@ -65,7 +65,7 @@ function renderPortfolio() {
         <h3 class="portfolio-title">${project.title}</h3>
         <p class="portfolio-description">${project.description}</p>
       </div>
-    </div>
+    </a>
   `).join('');
 }
 
