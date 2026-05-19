@@ -1,5 +1,6 @@
 import { Phone, MapPin, Clock } from 'lucide-react';
 import { contacts } from '../data/contacts';
+import maxIcon from '../assets/MAX.svg';
 import './Contacts.css';
 
 function Contacts() {
@@ -50,7 +51,7 @@ function Contacts() {
             </div>
             
             <a href="https://web.max.ru/238716647" className="contact-max" target="_blank" rel="noopener noreferrer">
-              <img src="/MAX.svg" alt="Max" width="20" height="20" />
+              <img src={maxIcon} alt="Max" width="20" height="20" />
               <span>Написать в Max</span>
             </a>
           </div>
