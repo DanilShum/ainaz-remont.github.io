@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { portfolio } from '../data/portfolio';
 import './Portfolio.css';
 
@@ -14,7 +15,11 @@ function Portfolio() {
         
         <div className="portfolio-grid">
           {portfolio.map((project) => (
-            <div key={project.id} className="portfolio-card">
+            <Link 
+              to={`/project/${project.id}`} 
+              key={project.id} 
+              className="portfolio-card"
+            >
               <div className="portfolio-image">
                 <img src={project.image} alt={project.title} />
                 <div className="portfolio-overlay">
@@ -26,7 +31,7 @@ function Portfolio() {
                 <h3 className="portfolio-title">{project.title}</h3>
                 <p className="portfolio-description">{project.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

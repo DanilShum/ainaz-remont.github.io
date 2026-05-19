@@ -1,12 +1,20 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { contacts, navItems } from '../data/contacts';
 import './Header.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isProjectPage = location.pathname.startsWith('/project/');
 
   const handleNavClick = (e, href) => {
+    if (isProjectPage) {
+      e.preventDefault();
+      window.location.href = href;
+      return;
+    }
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
@@ -18,9 +26,15 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, '#hero')}>
-          <span className="logo-text">{contacts.companyName}</span>
-        </a>
+        {isProjectPage ? (
+          <Link to="/" className="logo">
+            <span className="logo-text">{contacts.companyName}</span>
+          </Link>
+        ) : (
+          <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, '#hero')}>
+            <span className="logo-text">{contacts.companyName}</span>
+          </a>
+        )}
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           {navItems.map((item) => (
